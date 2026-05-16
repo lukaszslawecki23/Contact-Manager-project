@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Contact_manager_app"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+             x:Class="Contact_manager_app.Views.WindowShowContact">
+    
+    <StackPanel Spacing="20">
+        <TextBlock Text="Your contact list:" FontSize="16" FontWeight="Bold"/>
+    
+        <ListBox x:Name="lstContacts" Height="400">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="local:Contact">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding FirstName}" FontWeight="Bold"/>
+                        <TextBlock Text=" | " FontWeight="Bold"/>
+                        <TextBlock Text="{Binding LastName}" FontWeight="Bold"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,32 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="Contact_manager_app.Views.WindowAddContact"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450">
+        
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="10">
+            <TextBlock Text="First name: "/>
+            <TextBox x:Name="txtFirstName" Watermark="Type first name..." MaxLength="30"/>
+            
+            <TextBlock Text="Last name: "/>
+            <TextBox x:Name="txtLasttName" Watermark="Type last name..." MaxLength="30"/>
+            
+            <TextBlock Text="Phone number: "/>
+            <TextBox x:Name="txtPhoneNumber" Watermark="Type phone number..." MaxLength="9"/>
+            
+            <TextBlock Text="Email address: "/>
+            <TextBox x:Name="txtEmailAddress" Watermark="Type email address..." MaxLength="50"/>
+            
+            <TextBlock Text="Home address: "/>
+            <TextBox x:Name="txtHomeAddress" Watermark="Type home address..." MaxLength="50"/>
+            
+            <TextBlock Text="Note (optional): "/>
+            <TextBox x:Name="txtOptionalNote" Watermark="Your note..." Height="250"/>
+            
+            <Button x:Name="saveContact" Content="Save contact" Click="ButtonSave_OnClick"/>
+        </StackPanel>
+    </ScrollViewer>
+    
+</UserControl>

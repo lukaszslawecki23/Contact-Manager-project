@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Contact_manager_app/MainWindow.axaml" value="Contact_manager_app/Contact_manager_app.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
