@@ -89,3 +89,4 @@
 /home/Lukasz/Documents/Contact_manager_app/Contact_manager_app/obj/Debug/net10.0/Contact_manager_app.pdb
 /home/Lukasz/Documents/Contact_manager_app/Contact_manager_app/obj/Debug/net10.0/Contact_manager_app.genruntimeconfig.cache
 /home/Lukasz/Documents/Contact_manager_app/Contact_manager_app/obj/Debug/net10.0/ref/Contact_manager_app.dll
+/home/Lukasz/Documents/Contact_manager_app/Contact_manager_app/obj/Debug/net10.0/Contact_manager_app.sourcelink.json

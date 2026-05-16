@@ -28,6 +28,6 @@ public partial class MainWindow : Window
     {
         contacts = _logic.GetContacts();
         Console.WriteLine(contacts.Count);
-        AddingContactSpace.Content = new WindowShowContact(contacts);
+        AddingContactSpace.Content = new WindowShowContact(contacts, _logic);
     }
 }

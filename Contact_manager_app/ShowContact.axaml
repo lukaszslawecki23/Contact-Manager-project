@@ -9,16 +9,20 @@
     <StackPanel Spacing="20">
         <TextBlock Text="Your contact list:" FontSize="16" FontWeight="Bold"/>
     
-        <ListBox x:Name="lstContacts" Height="400">
+        <ListBox x:Name="lstContacts" Height="400" SelectionMode="Single">
             <ListBox.ItemTemplate>
                 <DataTemplate x:DataType="local:Contact">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding FirstName}" FontWeight="Bold"/>
-                        <TextBlock Text=" | " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding LastName}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding FirstName}" FontSize="18" FontWeight="Bold" Margin="10"/>
+                        <TextBlock Text=" | " FontWeight="Bold" FontSize="18" Margin="10"/>
+                        <TextBlock Text="{Binding LastName}" FontSize="18" FontWeight="Bold" Margin="10"/>
+                        <TextBlock Text=" | " FontWeight="Bold" FontSize="18" Margin="10"/>
+                        <TextBlock Text="{Binding PhoneNumber}" FontSize="18" FontWeight="Bold" Margin="10"/>
+                        
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <Button x:Name="buttonDeleteContact" Content="Delete contact" Click="DeleteContact" Margin="10"/>
     </StackPanel>
 </UserControl>
