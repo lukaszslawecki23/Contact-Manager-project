@@ -18,11 +18,21 @@
                         <TextBlock Text="{Binding LastName}" FontSize="18" FontWeight="Bold" Margin="10"/>
                         <TextBlock Text=" | " FontWeight="Bold" FontSize="18" Margin="10"/>
                         <TextBlock Text="{Binding PhoneNumber}" FontSize="18" FontWeight="Bold" Margin="10"/>
-                        
+                        <TextBlock Text=" | " FontWeight="Bold" FontSize="18" Margin="10"/>
+                        <TextBlock Text="{Binding EmailAddress}" FontSize="18" FontWeight="Bold" Margin="10"/>
+                        <TextBlock Text=" | " FontWeight="Bold" FontSize="18" Margin="10"/>
+                        <TextBlock Text="{Binding HomeAddress}" FontSize="18" FontWeight="Bold" Margin="10"/>
+                        <TextBlock Text=" | " FontWeight="Bold" FontSize="18" Margin="10"/>
+                        <TextBlock Text="{Binding OptionalNote}" FontSize="18" FontWeight="Bold" Margin="10"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Button x:Name="buttonDeleteContact" Content="Delete contact" Click="DeleteContact" Margin="10"/>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+            <Button x:Name="buttonDeleteContact" Content="Delete contact" Click="DeleteContact" Margin="10"/>
+            <Button x:Name="buttonEditContact" Content="Edit contact" Click="EditContact" Margin="10"/>
+        </StackPanel>
+        
     </StackPanel>
 </UserControl>

@@ -1,3 +1,4 @@
+using System;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
@@ -21,5 +22,19 @@ public partial class WindowShowContact : UserControl
     private void DeleteContact(object? sender, RoutedEventArgs e)
     {
         _logic.DeleteContact(lstContacts.SelectedIndex);
+    }
+
+    private async void EditContact(object? sender, RoutedEventArgs e)
+    {
+        if (lstContacts.SelectedItem is Contact selectedContact && lstContacts.SelectedIndex is int index)
+        {
+            var editWindow = new EditContactWindow(index, selectedContact, _logic);
+            var parentWindow = TopLevel.GetTopLevel(this) as Window;
+
+            if (parentWindow != null)
+            {
+                await editWindow.ShowDialog(parentWindow);
+            }
+        }
     }
 }

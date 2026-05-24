@@ -3,11 +3,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         x:Class="Contact_manager_app.Views.MainWindow"
-        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+        Width="1200"
+        Height="800"
         Title="Contact Manager">
         
     <Grid Margin="50" RowDefinitions="Auto, Auto, *">
-        
         <TextBlock Grid.Row="0" 
                    Text="Your Contact Manager" 
                    FontSize="32" 

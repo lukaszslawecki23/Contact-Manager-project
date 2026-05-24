@@ -27,7 +27,6 @@ public partial class MainWindow : Window
     private void ButtonnShow_OnClick(object? sender, RoutedEventArgs e)
     {
         contacts = _logic.GetContacts();
-        Console.WriteLine(contacts.Count);
         AddingContactSpace.Content = new WindowShowContact(contacts, _logic);
     }
 }

@@ -23,7 +23,7 @@
             <TextBox x:Name="txtHomeAddress" Watermark="Type home address..." MaxLength="50"/>
             
             <TextBlock Text="Note (optional): "/>
-            <TextBox x:Name="txtOptionalNote" Watermark="Your note..." Height="250"/>
+            <TextBox x:Name="txtOptionalNote" Watermark="Your note..." Height="100"/>
             
             <Button x:Name="saveContact" Content="Save contact" Click="ButtonSave_OnClick"/>
         </StackPanel>

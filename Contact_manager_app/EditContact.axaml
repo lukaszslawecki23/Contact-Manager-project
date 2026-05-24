@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:app="clr-namespace:Contact_manager_app"
+        Width="500"
+        Height="800"
+        x:Class="Contact_manager_app.Views.EditContactWindow"
+        x:DataType="app:Contact"
+        Title="EditContact">
+        
+        <StackPanel Margin="20" Spacing="10">
+                <TextBlock Text="Edit contact" FontSize="32" FontWeight="Bold"/>
+                
+                <TextBlock Text="First name: "/>
+                <TextBox x:Name="txtFirstName" Watermark="{Binding FirstName}" MaxLength="30"/>
+            
+                <TextBlock Text="Last name: "/>
+                <TextBox x:Name="txtLasttName" Watermark="{Binding LastName}" MaxLength="30"/>
+            
+                <TextBlock Text="Phone number: "/>
+                <TextBox x:Name="txtPhoneNumber" Watermark="{Binding PhoneNumber}" MaxLength="9"/>
+            
+                <TextBlock Text="Email address: "/>
+                <TextBox x:Name="txtEmailAddress" Watermark="{Binding EmailAddress}" MaxLength="50"/>
+            
+                <TextBlock Text="Home address: "/>
+                <TextBox x:Name="txtHomeAddress" Watermark="{Binding HomeAddress}" MaxLength="50"/>
+            
+                <TextBlock Text="Note (optional): "/>
+                <TextBox x:Name="txtOptionalNote" Watermark="{Binding OptionalNote}" Height="100"/>
+            
+                <Button x:Name="EditContactbutton" Content="Apply" Click="EditContactButton_OnClick"/>
+        </StackPanel>
+        
+</Window>

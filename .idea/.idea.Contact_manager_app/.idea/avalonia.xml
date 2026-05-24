@@ -3,7 +3,9 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="Contact_manager_app/AddContact.axaml" value="Contact_manager_app/Contact_manager_app.csproj" />
         <entry key="Contact_manager_app/App.axaml" value="Contact_manager_app/Contact_manager_app.csproj" />
+        <entry key="Contact_manager_app/EditContact.axaml" value="Contact_manager_app/Contact_manager_app.csproj" />
         <entry key="Contact_manager_app/MainWindow.axaml" value="Contact_manager_app/Contact_manager_app.csproj" />
         <entry key="Contact_manager_app/ShowContact.axaml" value="Contact_manager_app/Contact_manager_app.csproj" />
       </map>
